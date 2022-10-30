@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c0l-xxl-12">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Phone No</th>
+                            <th scope="col">DOJ</th>
+                            <th scope="col">Add Id </th>
+                            <th scope="col">DOB</th>
+                            <th scope="col">Desgination</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Password</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of viewEmp">
+                            <td>{{i.e_Name}}</td>
+                            <td>{{i.e_phn}}</td>
+                            <td>{{i.ejoinD}}</td>
+                            <td>{{i.eAdd}}</td>
+                            <td>{{i.eDob}}</td>
+                            <td>{{i.eDesg}}</td>
+                            <td>{{i.email}}</td>
+                            <td>{{i.ePass}}</td> 
+                            <td><button class="btn btn-danger">DELETE</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
