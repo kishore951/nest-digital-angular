@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
+import { ViewEmpComponent } from './view-emp/view-emp.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addemp",component:AddEmpComponent
+  },
+  {
+    path:"viewemp",component:ViewEmpComponent
   }
 ]
 @NgModule({
@@ -23,7 +27,8 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    AddEmpComponent
+    AddEmpComponent,
+    ViewEmpComponent
   ],
   imports: [
     BrowserModule,
