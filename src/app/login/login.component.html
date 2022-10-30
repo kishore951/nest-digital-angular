@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <b>
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Admin Username</label>
+                    <input type="text" class="form-control"name="adminusername" [(ngModel)]="adminusername">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control"name="adminpass" [(ngModel)]="adminpass">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="adminLogin()">Login</button>
+                </div>
+            </div>
+        </b>
+        <b>
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Employee Username</label>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control"  name="ePass" [(ngModel)]="ePass">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="empLogin()">Login</button>
+                </div>
+            </div>
+        </b>
+        <b>
+            <div class="row g-3">
+                <b>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Security Username</label>
+                    <input type="text" class="form-control" name="user_name" [(ngModel)]="user_name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control"  name="pass" [(ngModel)]="pass">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success"(click)="secLogin()">Login</button>
+                </div>
+                </b>
+            </div>
+        </b>
+        </div>
+    </div>
+</div>
