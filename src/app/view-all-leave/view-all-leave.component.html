@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c0l-xxl-12">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Employee ID</th>
+                            <th scope="col">type</th>
+                            <th scope="col">Discription</th>
+                            <th scope="col">Apply Date</th>
+                            <th scope="col">Leave Date</th>
+                            <th scope="col">Status</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of viewLeave">
+                            <td>{{i.emp_id}}</td>
+                            <td>{{i.type}}</td>
+                            <td>{{i.discrip}}</td>
+                            <td>{{i.applydate}}</td>
+                            <td>{{i.leavedate}}</td>
+                            <td>{{i.status}}</td>
+                            <td><button class="btn btn-danger">DELETE</button></td> 
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

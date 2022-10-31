@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { AddLeaveComponent } from './add-leave/add-leave.component';
+import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
 
 const appRoutes:Routes=[
   {
@@ -24,6 +25,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addleave",component:AddLeaveComponent
+  },
+  {
+    path:"viewleave",component:ViewAllLeaveComponent
   }
 ]
 @NgModule({
@@ -33,7 +37,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     AddEmpComponent,
     ViewEmpComponent,
-    AddLeaveComponent
+    AddLeaveComponent,
+    ViewAllLeaveComponent
   ],
   imports: [
     BrowserModule,
