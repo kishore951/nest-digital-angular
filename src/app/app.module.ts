@@ -13,6 +13,7 @@ import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { AddLeaveComponent } from './add-leave/add-leave.component';
 import { ViewAllLeaveComponent } from './view-all-leave/view-all-leave.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
 
 const appRoutes:Routes=[
   {
@@ -32,6 +33,9 @@ const appRoutes:Routes=[
   },
   {
     path:"addsecurity",component:AddSecurityComponent
+  },
+  {
+    path:"viewsec",component:ViewSecurityComponent
   }
 ]
 @NgModule({
@@ -43,7 +47,8 @@ const appRoutes:Routes=[
     ViewEmpComponent,
     AddLeaveComponent,
     ViewAllLeaveComponent,
-    AddSecurityComponent
+    AddSecurityComponent,
+    ViewSecurityComponent
   ],
   imports: [
     BrowserModule,
