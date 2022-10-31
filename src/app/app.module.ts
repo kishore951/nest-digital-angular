@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
+import { AddLeaveComponent } from './add-leave/add-leave.component';
 
 const appRoutes:Routes=[
   {
@@ -20,6 +21,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewemp",component:ViewEmpComponent
+  },
+  {
+    path:"addleave",component:AddLeaveComponent
   }
 ]
 @NgModule({
@@ -28,7 +32,8 @@ const appRoutes:Routes=[
     LoginComponent,
     NavbarComponent,
     AddEmpComponent,
-    ViewEmpComponent
+    ViewEmpComponent,
+    AddLeaveComponent
   ],
   imports: [
     BrowserModule,
